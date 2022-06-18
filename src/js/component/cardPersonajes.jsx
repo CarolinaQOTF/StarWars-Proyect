@@ -9,8 +9,8 @@ const CardPersonajes = ({id, nombre, eyes, genders, hair, img, frases}) => {
                         
    console.log(img);
     return(
-        <div>
-            <div id= "hola" className= "card me-2 p-3" style={{width: "50 rem"}}>
+        <div className="h-100">
+            <div id= "hola" className= "card me-2 p-3 h-100" style={{width: "50 rem"}}>
                 <img src={img} className="card-img-top" alt="..."/>
                <div className="card-body text-lg-start">
                     <h5 className="card-title">{nombre}</h5>
