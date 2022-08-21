@@ -6,13 +6,13 @@ import "../../styles/home.css";
 
 export const Home = () => {
 	const {store, actions} = useContext(Context);
-    // console.log(store.frasesPersonajes);
+    
    	
 	return (
 		<div className = "container">
-			<div className="container rounded border border-2 border-warning mt-5">
-				<div className="d-inline-flex m-3 border-bottom border-warning">
-					<h1 className = "text-warning mt-2" > Characters </h1>
+			<div className="container rounded mt-5">
+				<div className="d-inline-flex m-3">
+					<h1 className = "text1 mt-2 p-3" > Characters </h1>
 				</div>
 				
 				<div className = "overflow-auto d-flex">
@@ -21,9 +21,9 @@ export const Home = () => {
                 </div>	
 			</div>
 
-			<div className="container border border-warning border-2 mt-5">
-				<div className="d-inline-flex m-3 border-bottom border-warning">
-					<h1 className = "text-warning mt-2 " > Planets </h1>
+			<div className="container mt-5">
+				<div className="d-inline-flex m-3">
+					<h1 className = "text1 mt-2 p-3" > Planets </h1>
 				</div>
 				
 				<div className = "overflow-auto d-flex">
@@ -31,8 +31,12 @@ export const Home = () => {
                 </div>	
 			</div>
 
-			
+
+	
+
 		</div>
+
+		
 
 	)
 

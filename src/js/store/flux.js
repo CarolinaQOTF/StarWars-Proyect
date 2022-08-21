@@ -117,38 +117,25 @@ const getState = ({
 
             addFavorites: (newItem) => {
                 const store = getStore();
-                setStore({
-                    ...store.favorites,
-                    favorites: store.favorites.concat(newItem)
-                })
+                if (!store.favorites.includes(newItem)) {
+                    setStore({
+                        ...store.favorites,
+                        favorites: store.favorites.concat(newItem)
+                    })
+                }
             },
 
             deleteFavorites: (character) => {
                 const store = getStore();
-                setStore({
-                    favorites: store.favorites.filter((item) => item
+                const personajes = store.favorites
 
-                        !==
-                        character)
+                let newArr = personajes.filter((item) => item !== character)
+                setStore({
+                    favorites: newArr
                 })
             },
 
-            // enciende: () => {
-            //     const store = getStore();
-            //     setStore({
-            //         ...store.favorites,
-            //         enciende: luz,
-            //         enciende: store.favorites = luz ? glow : false
 
-            //     })
-            // }
-
-
-            //     //reset the global store
-            //     setStore({
-            //         demo: demo
-            //     });
-            // }
         }
     };
 };

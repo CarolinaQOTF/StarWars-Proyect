@@ -2,11 +2,12 @@ import React, { Component } from "react";
 
 export const Footer = () => {
 	return (
-		<div className="container text-center text-warning">
-		    <footer className="py-3 my-4  ">
-				by Carolina Celis
-		    	
-            </footer>
-	    </div>
+		<footer className="footer mt-5 py-3 text-center">
+    <div >
+      <p>
+        © by Carolina Celis
+      </p>
+    </div>
+  </footer>
 );}
 

@@ -11,6 +11,7 @@ import { Navbar } from "./component/navbar.jsx";
 import { Footer } from "./component/footer.jsx";
 import ViewGeneral from "./views/viewGeneral.jsx";
 
+
 //create your first component
 const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
@@ -34,7 +35,7 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/viewGeneral/:theId">
 							<ViewGeneral />
-						</Route>
+						</Route>						
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
