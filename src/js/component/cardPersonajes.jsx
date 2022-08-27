@@ -10,7 +10,7 @@ const CardPersonajes = ({id, nombre, eyes, genders, hair, img, frases}) => {
    console.log(img);
     return(
         <div className="h-100">
-            <div  className= "card card-back  me-2 p-3 h-100" style={{width: "50 rem"}}>
+            <div  className= "card card-back  me-2 p-3 h-100" style={{width: "25 rem"}}>
                 <img src={img} className="card-img-top img-bor " alt="..."/>
                <div className="card-body text-white text-lg-start">
                     <h3 className="card-title">{nombre}</h3>
